@@ -748,7 +748,22 @@ require('lazy').setup({
       vim.cmd.hi 'Comment gui=none'
     end,
   },
-
+  {
+    'rose-pine/neovim',
+    -- event = 'VeryLazy',
+    -- config = function()
+    --   vim.cmd.colorscheme 'rose-pine-moon'
+    -- end,
+  },
+  {
+    'LunarVim/lunar.nvim',
+    -- event = "VeryLazy",
+    -- priority = 1000,
+    -- config = function()
+    --   vim.cmd.colorscheme 'lunar'
+    --   vim.cmd.hi 'Comment gui=none'
+    -- end,
+  },
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
